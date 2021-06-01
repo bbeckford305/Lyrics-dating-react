@@ -36,7 +36,8 @@ To plan my dating app I had to think about one of the things I love the most. Wh
 
 ### Wireframe
 
-![Wireframe](public/Images/1920-1080.jpg)
+![User Profile Page Wireframe](https://user-images.githubusercontent.com/79342824/120255090-10c56700-c240-11eb-8037-cca74dc24041.jpeg)
+![Search Results Page Wireframe](https://user-images.githubusercontent.com/79342824/120255124-20dd4680-c240-11eb-8929-8a67ace4a1f3.jpeg)
 
 ### ERD
 
