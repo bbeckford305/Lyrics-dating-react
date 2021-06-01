@@ -6,9 +6,9 @@ In a crazy world like today it can be hard to meet someone with common interest.
 
 
 ## Important Links
-[Other Repo](https://github.com/bbeckford305/lyrics-dating-express-api)
-[Deployed API](https://lyrics-dating-express-api.herokuapp.com/)
-[Deployed Client](https://bbeckford305.github.io/Lyrics-dating-react/)
+- [Other Repo](https://github.com/bbeckford305/lyrics-dating-express-api)
+- [Deployed API](https://lyrics-dating-express-api.herokuapp.com/)
+- [Deployed Client](https://bbeckford305.github.io/Lyrics-dating-react/)
 
 ## Planning Story
 
