@@ -12,6 +12,9 @@ class SignUp extends Component {
     super(props)
 
     this.state = {
+      firstName: '',
+      lastName: '',
+      userName: '',
       email: '',
       password: '',
       passwordConfirmation: ''
@@ -37,7 +40,7 @@ class SignUp extends Component {
       }))
       .then(() => history.push('/'))
       .catch(error => {
-        this.setState({ email: '', password: '', passwordConfirmation: '' })
+        this.setState({ firstName: '', lastName: '', userName: '', email: '', password: '', passwordConfirmation: '' })
         msgAlert({
           heading: 'Sign Up Failed with error: ' + error.message,
           message: messages.signUpFailure,
@@ -47,13 +50,46 @@ class SignUp extends Component {
   }
 
   render () {
-    const { email, password, passwordConfirmation } = this.state
+    const { firstName, lastName, userName, email, password, passwordConfirmation } = this.state
 
     return (
       <div className="row">
         <div className="col-sm-10 col-md-8 mx-auto mt-5">
           <h3>Sign Up</h3>
           <Form onSubmit={this.onSignUp}>
+            <Form.Group controlId="firstName">
+              <Form.Label>First Name</Form.Label>
+              <Form.Control
+                required
+                type="firstName"
+                name="firstName"
+                value={firstName}
+                placeholder="Enter firstName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="lastName">
+              <Form.Label>Last Name</Form.Label>
+              <Form.Control
+                required
+                type="lastName"
+                name="lastName"
+                value={lastName}
+                placeholder="Enter lastName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="userName">
+              <Form.Label>User Name</Form.Label>
+              <Form.Control
+                required
+                type="userName"
+                name="userName"
+                value={userName}
+                placeholder="Enter userName"
+                onChange={this.handleChange}
+              />
+            </Form.Group>
             <Form.Group controlId="email">
               <Form.Label>Email address</Form.Label>
               <Form.Control
