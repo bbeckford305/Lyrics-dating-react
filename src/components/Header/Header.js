@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import image from '../public/images/Logo2.png'
 // import './index.scss'
 
 const authenticatedOptions = (
@@ -28,7 +27,7 @@ const Header = ({ user }) => (
   <Navbar className="navbar1" expand="md">
     <Navbar.Brand className="navbarLogo" href="/">
       <img
-        src={ image }
+        src="/images/Logo2.png"
         width="130"
         height="70"
         className="navbar-logo d-inline-block align-top"
