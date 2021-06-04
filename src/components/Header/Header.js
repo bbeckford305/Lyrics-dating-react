@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import logo from '/public/images/Logo2.png'
+import logo from '../public/images/Logo2.png'
 // import './index.scss'
 
 const authenticatedOptions = (
