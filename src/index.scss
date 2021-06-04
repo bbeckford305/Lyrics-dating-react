@@ -1,1 +1,117 @@
+$colors: (
+  primary: #335c67,
+);
+
 @import '~bootstrap/scss/bootstrap';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+// Font Variables
+$tangerine: 'Tangerine', serif;
+$greatVibe: 'Great Vibes', cursive;
+$paris: 'Parisienne', cursive;
+$monsieur: 'Monsieur La Doulaise', cursive;
+$ovo: 'Ovo', serif;
+
+//Color Variables
+$green: #335c67;
+$black: #000000;
+$white: #ffffff;
+$yellow: #fff3b0;
+$orange: #e09f3e;
+$red: #9e2a2b;
+$burgandy: #540b0e;
+$greentransparent: rgba(51, 92, 103, 0.5);
+$yellowtransparent: rgba(255, 243, 176, 0.5);
+$orangetransparent: rgba(244, 159, 62, 0.5);
+$redtransparent: rgba(158, 42, 43, 0.5);
+$burgandytransparent: rgba(84, 11, 14, 0.5);
+
+#root {
+  background-color: $greentransparent;
+}
+
+//Navbar
+
+.navbar {
+  // background: $green;
+  background-color:transparent;
+  font-size: 25px;
+  color: $white;
+  font-family: $ovo;
+
+  z-index: 2;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $white;
+    text-shadow: 1px 1px $black;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: $white;
+    text-shadow: 1px 1px $black;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: $orange;
+    text-shadow: 1px 1px $black;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: $orange;
+    text-shadow: 1px 1px $black;
+}
+//homePage
+
+.homepage1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+//signUp
+
+.signUpContainer {
+  font-family: $ovo;
+  // background-image: url('/images/Image_4.jpg');
+  // background-size: cover;
+}
+
+.signUpButton {
+  background: $green;
+  font-family: $ovo;
+  padding: 5px;
+  border: none;
+}
+
+.signUpButton:hover {
+	background-color: $redtransparent;
+}
+
+//signIn
+
+.signInContainer {
+  font-family: $ovo;
+  // background-image: url('/images/Sign_Up_Image.jpg');
+  // background-size: cover;
+}
+
+.signInButton {
+  background: $green;
+  font-family: $ovo;
+  padding: 5px;
+  border: none;
+}
+
+.signInButton:hover {
+	background-color: $redtransparent;
+}

@@ -53,7 +53,8 @@ class SignUp extends Component {
     const { firstName, lastName, userName, email, password, passwordConfirmation } = this.state
 
     return (
-      <div className="row">
+
+      <div className="signUpContainer row">
         <div className="col-sm-10 col-md-8 mx-auto mt-5">
           <h3>Sign Up</h3>
           <Form onSubmit={this.onSignUp}>
@@ -64,7 +65,7 @@ class SignUp extends Component {
                 type="firstName"
                 name="firstName"
                 value={firstName}
-                placeholder="Enter firstName"
+                placeholder="Enter First Name"
                 onChange={this.handleChange}
               />
             </Form.Group>
@@ -75,7 +76,7 @@ class SignUp extends Component {
                 type="lastName"
                 name="lastName"
                 value={lastName}
-                placeholder="Enter lastName"
+                placeholder="Enter Last Name"
                 onChange={this.handleChange}
               />
             </Form.Group>
@@ -86,7 +87,7 @@ class SignUp extends Component {
                 type="userName"
                 name="userName"
                 value={userName}
-                placeholder="Enter userName"
+                placeholder="Enter Username"
                 onChange={this.handleChange}
               />
             </Form.Group>
@@ -97,7 +98,7 @@ class SignUp extends Component {
                 type="email"
                 name="email"
                 value={email}
-                placeholder="Enter email"
+                placeholder="Enter Email"
                 onChange={this.handleChange}
               />
             </Form.Group>
@@ -123,7 +124,7 @@ class SignUp extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button
+            <Button className="signUpButton"
               variant="primary"
               type="submit"
             >
