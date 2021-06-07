@@ -9,5 +9,4 @@ function HomePage () {
   )
 }
 
-// <video src='/videos/Dating_Intro.mp4' autoPlay loop muted />
 export default HomePage

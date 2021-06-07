@@ -10,6 +10,9 @@ import SignIn from './components/SignIn/SignIn'
 import SignOut from './components/SignOut/SignOut'
 import ChangePassword from './components/ChangePassword/ChangePassword'
 import HomePage from './components/HomePage/homePage'
+import CreateProfile from './components/ProfilePage/info'
+import ShowProfile from './components/ProfilePage/viewProfile'
+import UpdateProfile from './components/ProfilePage/updateProfile'
 
 class App extends Component {
   constructor (props) {
@@ -59,6 +62,15 @@ class App extends Component {
           )} />
           <Route path='/sign-in' render={() => (
             <SignIn msgAlert={this.msgAlert} setUser={this.setUser} />
+          )} />
+          <AuthenticatedRoute user={user} path='/create-profile' render={() => (
+            <CreateProfile msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/profile/:id' render={() => (
+            <ShowProfile msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/update-profile' render={() => (
+            <UpdateProfile msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
           )} />
           <AuthenticatedRoute user={user} path='/sign-out' render={() => (
             <SignOut msgAlert={this.msgAlert} clearUser={this.clearUser} user={user} />
